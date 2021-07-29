@@ -19,16 +19,16 @@ after_success:
   - docker push jwatkins12/multi-client
   - docker push jwatkins12/multi-nginx
   - docker push jwatkins12/multi-server
-  - docker push jwaktins12/multi-worker
+  - docker push jwatkins12/multi-worker
 
-deploy:
-  provider: elasticbeanstalk
-  region: eu-west-2
-  app: "multi-docker"
-  env: "Multidocker-env"
-  bucket_name: "elasticbeanstalk-eu-west-2-615389170786"
-  bucket_path: "docker-multi"
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
-  on:
-    branch: master
+# deploy:
+#   provider: elasticbeanstalk
+#   region: eu-west-2
+#   app: "multi-docker"
+#   env: "Multidocker-env"
+#   bucket_name: "elasticbeanstalk-eu-west-2-615389170786"
+#   bucket_path: "docker-multi"
+#   access_key_id: $AWS_ACCESS_KEY
+#   secret_access_key: $AWS_SECRET_KEY
+#   on:
+#     branch: master
