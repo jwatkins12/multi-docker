@@ -18,4 +18,4 @@ after_success:
   - docker push jwatkins12/multi-client
   - docker push jwatkins12/multi-nginx
   - docker push jwatkins12/multi-server
-  - dokcer push jwaktins12/multi-worker
+  - docker push jwaktins12/multi-worker
